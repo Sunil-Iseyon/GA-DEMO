@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import "./globals.css";
-
+import { Analytics } from '@vercel/analytics/react';
 export const metadata: Metadata = {
   title: "GA Demo — Next.js + Google Analytics",
   description: "Demo project showing Google Analytics 4 integration with Next.js",
@@ -18,6 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         */}
         <GoogleAnalytics />
         {children}
+        <Analytics />
       </body>
     </html>
   );
