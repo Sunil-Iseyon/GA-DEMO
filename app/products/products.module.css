@@ -1,0 +1,56 @@
+/* app/products/products.module.css */
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+.nav { margin-bottom: 48px; }
+.back { color: var(--muted); font-size: 0.9rem; transition: color 0.2s; }
+.back:hover { color: var(--text); }
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  margin-bottom: 12px;
+}
+.lead {
+  color: var(--muted);
+  margin-bottom: 40px;
+  font-size: 0.95rem;
+}
+.lead code {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: border-color 0.2s;
+}
+.card:hover { border-color: rgba(108,99,255,0.4); }
+.emoji { font-size: 2rem; }
+.name { font-size: 1rem; font-weight: 600; }
+.price { color: var(--accent); font-weight: 600; font-size: 1.1rem; }
+.btn {
+  margin-top: 8px;
+  background: rgba(108,99,255,0.15);
+  border: 1px solid rgba(108,99,255,0.3);
+  color: var(--accent);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.btn:hover { background: rgba(108,99,255,0.28); }

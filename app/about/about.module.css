@@ -1,0 +1,63 @@
+/* app/about/about.module.css */
+.page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+.nav { margin-bottom: 48px; }
+.back {
+  color: var(--muted);
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+.back:hover { color: var(--text); }
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  margin-bottom: 16px;
+}
+.lead {
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+.lead strong, .lead em { color: var(--text); font-style: normal; }
+.box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  margin-bottom: 32px;
+}
+.box h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.box ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.box li {
+  color: var(--muted);
+  font-size: 0.9rem;
+  display: flex;
+  gap: 8px;
+}
+.box li::before { content: "—"; color: var(--border); }
+.box code {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  color: var(--accent);
+}
+.link {
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+.link:hover { opacity: 0.7; }
